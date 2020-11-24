@@ -1,0 +1,22 @@
+<div class="container" style="display: flex; justify-content: space-around;">
+
+    <% users.forEach(user =>{ %>
+        <div style="margin-top: 5%;" class="details">
+        <h2>First-Name: <%=user.firstName %></h2>
+    <h2>Last-Name: <%=user.lastName %></h2>
+    <h2>Email: <%=user.email %> </h2>
+    <h2>Contact: <%=user.contact %> </h2>
+    <img height="150" width="100" src="<%= user.imagePath%> ">
+
+    <a class="btn btn-primary mt-4" href="/edit/<%=user.id %>">Edit</a>
+
+    </div>
+
+
+   <%  }) %>
+
+    
+
+
+
+</div>
